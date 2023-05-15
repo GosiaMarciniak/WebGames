@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+canvas {
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#gameContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#sudokuBoard {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1px;
+  background-color: #ccc;
+  padding: 2px;
+  width: 450px;
+  height: 450px;
+}
+
+#sudokuBoard div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; 
+  background-color: #fff;
+  cursor: pointer;
+  width:48px; 
+  height: 48px; 
+  box-sizing: border-box;
+}
+
+#sudokuBoard div::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#sudokuBoard span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#checkButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#sudokuBoard .sudoku-cell.initial-value {
+  color: #888; 
+}
